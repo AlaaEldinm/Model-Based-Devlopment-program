@@ -1,0 +1,17 @@
+%% first order_system 
+K=1.5; 
+T=0.5;  
+num_1=[0 K] ; 
+den_1=[T 1] ; 
+system_fn1=tf(num_1,den_1)  
+step(system_fn) 
+hold on  
+%% Second order system 
+Wn=1 ;  
+Zeta=0.5  ; 
+num_2=[0 Wn] ; 
+den_2=[] ; 
+system_fn2=tf(num_2,den_2)
+
+
+
